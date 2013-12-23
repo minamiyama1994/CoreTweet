@@ -1,0 +1,490 @@
+<html>
+  <head>
+    <title>CoreTweet.Streaming.StreamingApi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">CoreTweet</a> : <a href="index.html">CoreTweet.Streaming Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:CoreTweet.Streaming.StreamingApi">Overview</a>
+      </p>
+      <p>
+        <a href="#T:CoreTweet.Streaming.StreamingApi:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:CoreTweet.Streaming.StreamingApi:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:CoreTweet.Streaming.StreamingApi:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:CoreTweet.Streaming.StreamingApi">StreamingApi  Class</h1>
+    <p class="Summary" id="T:CoreTweet.Streaming.StreamingApi:Summary">
+          
+    </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:CoreTweet.Streaming.StreamingApi:Signature">public class  <b>StreamingApi</b> : <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a></div>
+    </div>
+    <div class="Remarks" id="T:CoreTweet.Streaming.StreamingApi:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:CoreTweet.Streaming.StreamingApi:Docs:Remarks">
+            
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:CoreTweet.Streaming.StreamingApi:Docs:Version Information">
+        <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.
+							</p>
+        <h2 class="Section">Protected Constructors</h2>
+        <div class="SectionBox" id="Protected Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:CoreTweet.Streaming.StreamingApi(CoreTweet.Tokens)">StreamingApi</a>
+                    </b>(<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>)</div>
+                </td>
+                <td>
+                      
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="../CoreTweet.Core/TokenIncluded.html#P:CoreTweet.Core.TokenIncluded.IncludedTokens">IncludedTokens</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>
+                  </i>.      (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Protected Properties</h2>
+        <div class="SectionBox" id="Protected Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../CoreTweet.Core/TokenIncluded.html#P:CoreTweet.Core.TokenIncluded.Tokens">Tokens</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>
+                  </i>. 
+            Gets or sets the oauth tokens.
+             (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType)">StartStream</a>
+                  </b>(<a href="../CoreTweet.Streaming/StreamingParameters.html">StreamingParameters</a>, <a href="../CoreTweet.Streaming/StreamingType.html">StreamingType</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;StreamingMessage&gt;</a></nobr><blockquote>    </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType,System.Linq.Expressions.Expression{System.Func{System.String,System.Action{CoreTweet.Streaming.StreamingMessage}}}[])">StartStream</a>
+                  </b>(<a href="../CoreTweet.Streaming/StreamingParameters.html">StreamingParameters</a>, <a href="../CoreTweet.Streaming/StreamingType.html">StreamingType</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, Action&lt;StreamingMessage&gt;&gt;&gt;</a>[])<blockquote><p> Starts the stream. </p><p><i>Create(StatusMessage)</i> : This is called when a new status was created.
+            </p><p><i>Delete(IDMessage)</i> : This is called when a status was deleted.
+            </p><p><i>Friends(FriendsMessage)</i> : This is called when the user stream starts.
+            </p><p><i>Events(EventsMessage)</i> : This is called when a event happens.
+            </p><p><i>Limit(LimitMessage)</i> : This is called when some API reaches the own limit.
+            </p><p><i>Warning(WarningMessage)</i> : This is called when the warning message was sent.
+            Add the "stall_warning =&gt; true" to the parameters to use this endpoint.
+            </p><p><i>Disconnect(DisconnectMessage)</i> : This is called when the connection is disconnected.
+            </p><p><i>ScrubGeo(IDMessage)</i> : This is called when the geo data is deleted.
+            </p><p><i>StatusWithheld(IDMessage)</i> : This is called when status withheld happens.
+            </p><p><i>UserWithheld(IDMessage)</i> : This is called when user withheld happens.
+            </p><p><i>Envelopes(EnvelopesMessage)</i> : This is called when Site Streams are sent the message.
+            </p><p><i>Control(ControlMessage)</i> : This is called when a control message are sent.
+            </p><p><i>RawJson(RawJsonMessage)</i> : This is the endpoint to get the raw json data.
+            </p></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:CoreTweet.Streaming.StreamingApi:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="C:CoreTweet.Streaming.StreamingApi(CoreTweet.Tokens)">StreamingApi Constructor</h3>
+        <blockquote id="C:CoreTweet.Streaming.StreamingApi(CoreTweet.Tokens):member">
+          <p class="Summary">
+                
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">protected  <b>StreamingApi</b> (<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a> tokens)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:CoreTweet.Streaming.StreamingApi(CoreTweet.Tokens):Parameters">
+            <dl>
+              <dt>
+                <i>tokens</i>
+              </dt>
+              <dd>
+                    
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:CoreTweet.Streaming.StreamingApi(CoreTweet.Tokens):Remarks">
+                
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:CoreTweet.Streaming.StreamingApi(CoreTweet.Tokens):Version Information">
+            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType)">StartStream Method</h3>
+        <blockquote id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):member">
+          <p class="Summary">
+                
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;StreamingMessage&gt;</a> <b>StartStream</b> (<a href="../CoreTweet.Streaming/StreamingParameters.html">StreamingParameters</a> parameters, <a href="../CoreTweet.Streaming/StreamingType.html">StreamingType</a> type)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                    
+              </dd>
+              <dt>
+                <i>type</i>
+              </dt>
+              <dd>
+                    
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):Returns">
+                
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):Remarks">
+                
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):Version Information">
+            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType,System.Linq.Expressions.Expression{System.Func{System.String,System.Action{CoreTweet.Streaming.StreamingMessage}}}[])">StartStream Method</h3>
+        <blockquote id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType,System.Linq.Expressions.Expression{System.Func{System.String,System.Action{CoreTweet.Streaming.StreamingMessage}}}[]):member">
+          <p class="Summary">
+            <p> Starts the stream. </p>
+            <p>
+              <i>Create(StatusMessage)</i> : This is called when a new status was created.
+            </p>
+            <p>
+              <i>Delete(IDMessage)</i> : This is called when a status was deleted.
+            </p>
+            <p>
+              <i>Friends(FriendsMessage)</i> : This is called when the user stream starts.
+            </p>
+            <p>
+              <i>Events(EventsMessage)</i> : This is called when a event happens.
+            </p>
+            <p>
+              <i>Limit(LimitMessage)</i> : This is called when some API reaches the own limit.
+            </p>
+            <p>
+              <i>Warning(WarningMessage)</i> : This is called when the warning message was sent.
+            Add the "stall_warning =&gt; true" to the parameters to use this endpoint.
+            </p>
+            <p>
+              <i>Disconnect(DisconnectMessage)</i> : This is called when the connection is disconnected.
+            </p>
+            <p>
+              <i>ScrubGeo(IDMessage)</i> : This is called when the geo data is deleted.
+            </p>
+            <p>
+              <i>StatusWithheld(IDMessage)</i> : This is called when status withheld happens.
+            </p>
+            <p>
+              <i>UserWithheld(IDMessage)</i> : This is called when user withheld happens.
+            </p>
+            <p>
+              <i>Envelopes(EnvelopesMessage)</i> : This is called when Site Streams are sent the message.
+            </p>
+            <p>
+              <i>Control(ControlMessage)</i> : This is called when a control message are sent.
+            </p>
+            <p>
+              <i>RawJson(RawJsonMessage)</i> : This is the endpoint to get the raw json data.
+            </p>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>StartStream</b> (<a href="../CoreTweet.Streaming/StreamingParameters.html">StreamingParameters</a> parameters, <a href="../CoreTweet.Streaming/StreamingType.html">StreamingType</a> type, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, Action&lt;StreamingMessage&gt;&gt;&gt;</a>[] streamingActions)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType,System.Linq.Expressions.Expression{System.Func{System.String,System.Action{CoreTweet.Streaming.StreamingMessage}}}[]):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+            Parameters for Streaming API.
+            </dd>
+              <dt>
+                <i>type</i>
+              </dt>
+              <dd>
+            Type of Streaming API.
+            </dd>
+              <dt>
+                <i>streamingActions</i>
+              </dt>
+              <dd>
+            Actions for streaming API.
+            </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType,System.Linq.Expressions.Expression{System.Func{System.String,System.Action{CoreTweet.Streaming.StreamingMessage}}}[]):Remarks">
+                
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType,System.Linq.Expressions.Expression{System.Func{System.String,System.Action{CoreTweet.Streaming.StreamingMessage}}}[]):Version Information">
+            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>
