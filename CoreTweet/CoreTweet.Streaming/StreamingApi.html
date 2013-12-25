@@ -68,7 +68,7 @@
         color: gray;
       }
 
-      span.NotEntered /* Documentation for this section has not yet been entered */ {
+      span.NotEntered /* */ {
         font-style: italic;
         color: red;	
       }
@@ -207,7 +207,7 @@
     </div>
     <h1 class="PageTitle" id="T:CoreTweet.Streaming.StreamingApi">StreamingApi  Class</h1>
     <p class="Summary" id="T:CoreTweet.Streaming.StreamingApi:Summary">
-          
+      <span class="NotEntered"></span>
     </p>
     <div>
       <h2>Syntax</h2>
@@ -216,11 +216,11 @@
     <div class="Remarks" id="T:CoreTweet.Streaming.StreamingApi:Docs">
       <h2 class="Section">Remarks</h2>
       <div class="SectionBox" id="T:CoreTweet.Streaming.StreamingApi:Docs:Remarks">
-            
+        <span class="NotEntered"></span>
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.Streaming.StreamingApi:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+        <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -243,7 +243,7 @@
                     </b>(<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>)</div>
                 </td>
                 <td>
-                      
+                  <span class="NotEntered"></span>
                 </td>
               </tr>
             </table>
@@ -263,7 +263,7 @@
                 <td>
                   <i>
                     <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>
-                  </i>.      (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
+                  </i>. <span class="NotEntered"></span> (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
               </tr>
             </table>
           </div>
@@ -303,32 +303,10 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType)">StartStream</a>
-                  </b>(<a href="../CoreTweet.Streaming/StreamingParameters.html">StreamingParameters</a>, <a href="../CoreTweet.Streaming/StreamingType.html">StreamingType</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;StreamingMessage&gt;</a></nobr><blockquote>    </blockquote></td>
-              </tr>
-              <tr valign="top">
-                <td>
-                  <div>
-                  </div>
-                </td>
-                <td colspan="2">
-                  <b>
-                    <a href="#M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType,System.Linq.Expressions.Expression{System.Func{System.String,System.Action{CoreTweet.Streaming.StreamingMessage}}}[])">StartStream</a>
-                  </b>(<a href="../CoreTweet.Streaming/StreamingParameters.html">StreamingParameters</a>, <a href="../CoreTweet.Streaming/StreamingType.html">StreamingType</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, Action&lt;StreamingMessage&gt;&gt;&gt;</a>[])<blockquote><p> Starts the stream. </p><p><i>Create(StatusMessage)</i> : This is called when a new status was created.
-            </p><p><i>Delete(IDMessage)</i> : This is called when a status was deleted.
-            </p><p><i>Friends(FriendsMessage)</i> : This is called when the user stream starts.
-            </p><p><i>Events(EventsMessage)</i> : This is called when a event happens.
-            </p><p><i>Limit(LimitMessage)</i> : This is called when some API reaches the own limit.
-            </p><p><i>Warning(WarningMessage)</i> : This is called when the warning message was sent.
-            Add the "stall_warning =&gt; true" to the parameters to use this endpoint.
-            </p><p><i>Disconnect(DisconnectMessage)</i> : This is called when the connection is disconnected.
-            </p><p><i>ScrubGeo(IDMessage)</i> : This is called when the geo data is deleted.
-            </p><p><i>StatusWithheld(IDMessage)</i> : This is called when status withheld happens.
-            </p><p><i>UserWithheld(IDMessage)</i> : This is called when user withheld happens.
-            </p><p><i>Envelopes(EnvelopesMessage)</i> : This is called when Site Streams are sent the message.
-            </p><p><i>Control(ControlMessage)</i> : This is called when a control message are sent.
-            </p><p><i>RawJson(RawJsonMessage)</i> : This is the endpoint to get the raw json data.
-            </p></blockquote></td>
+                    <a href="#M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingType,CoreTweet.Streaming.StreamingParameters)">StartStream</a>
+                  </b>(<a href="../CoreTweet.Streaming/StreamingType.html">StreamingType</a>, <a href="../CoreTweet.Streaming/StreamingParameters.html">StreamingParameters</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;StreamingMessage&gt;</a></nobr><blockquote>
+            Starts the twitter stream.
+            </blockquote></td>
               </tr>
             </table>
           </div>
@@ -341,7 +319,7 @@
         <h3 id="C:CoreTweet.Streaming.StreamingApi(CoreTweet.Tokens)">StreamingApi Constructor</h3>
         <blockquote id="C:CoreTweet.Streaming.StreamingApi(CoreTweet.Tokens):member">
           <p class="Summary">
-                
+            <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
           <div class="Signature">protected  <b>StreamingApi</b> (<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a> tokens)</div>
@@ -352,133 +330,54 @@
                 <i>tokens</i>
               </dt>
               <dd>
-                    
+                <span class="NotEntered"></span>
               </dd>
             </dl>
           </blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="C:CoreTweet.Streaming.StreamingApi(CoreTweet.Tokens):Remarks">
-                
+            <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:CoreTweet.Streaming.StreamingApi(CoreTweet.Tokens):Version Information">
-            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType)">StartStream Method</h3>
-        <blockquote id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):member">
+        <h3 id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingType,CoreTweet.Streaming.StreamingParameters)">StartStream Method</h3>
+        <blockquote id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingType,CoreTweet.Streaming.StreamingParameters):member">
           <p class="Summary">
-                
-          </p>
+            Starts the twitter stream.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;StreamingMessage&gt;</a> <b>StartStream</b> (<a href="../CoreTweet.Streaming/StreamingParameters.html">StreamingParameters</a> parameters, <a href="../CoreTweet.Streaming/StreamingType.html">StreamingType</a> type)</div>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;StreamingMessage&gt;</a> <b>StartStream</b> (<a href="../CoreTweet.Streaming/StreamingType.html">StreamingType</a> type, <a href="../CoreTweet.Streaming/StreamingParameters.html">StreamingParameters</a> parameters)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):Parameters">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingType,CoreTweet.Streaming.StreamingParameters):Parameters">
             <dl>
-              <dt>
-                <i>parameters</i>
-              </dt>
-              <dd>
-                    
-              </dd>
               <dt>
                 <i>type</i>
               </dt>
               <dd>
-                    
-              </dd>
+            Type of streaming.
+            </dd>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+            Parameters of streaming.
+            </dd>
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):Returns">
-                
-          </blockquote>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingType,CoreTweet.Streaming.StreamingParameters):Returns">
+            The stream messages.
+            </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):Remarks">
-                
+          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingType,CoreTweet.Streaming.StreamingParameters):Remarks">
+            <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):Version Information">
-            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType,System.Linq.Expressions.Expression{System.Func{System.String,System.Action{CoreTweet.Streaming.StreamingMessage}}}[])">StartStream Method</h3>
-        <blockquote id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType,System.Linq.Expressions.Expression{System.Func{System.String,System.Action{CoreTweet.Streaming.StreamingMessage}}}[]):member">
-          <p class="Summary">
-            <p> Starts the stream. </p>
-            <p>
-              <i>Create(StatusMessage)</i> : This is called when a new status was created.
-            </p>
-            <p>
-              <i>Delete(IDMessage)</i> : This is called when a status was deleted.
-            </p>
-            <p>
-              <i>Friends(FriendsMessage)</i> : This is called when the user stream starts.
-            </p>
-            <p>
-              <i>Events(EventsMessage)</i> : This is called when a event happens.
-            </p>
-            <p>
-              <i>Limit(LimitMessage)</i> : This is called when some API reaches the own limit.
-            </p>
-            <p>
-              <i>Warning(WarningMessage)</i> : This is called when the warning message was sent.
-            Add the "stall_warning =&gt; true" to the parameters to use this endpoint.
-            </p>
-            <p>
-              <i>Disconnect(DisconnectMessage)</i> : This is called when the connection is disconnected.
-            </p>
-            <p>
-              <i>ScrubGeo(IDMessage)</i> : This is called when the geo data is deleted.
-            </p>
-            <p>
-              <i>StatusWithheld(IDMessage)</i> : This is called when status withheld happens.
-            </p>
-            <p>
-              <i>UserWithheld(IDMessage)</i> : This is called when user withheld happens.
-            </p>
-            <p>
-              <i>Envelopes(EnvelopesMessage)</i> : This is called when Site Streams are sent the message.
-            </p>
-            <p>
-              <i>Control(ControlMessage)</i> : This is called when a control message are sent.
-            </p>
-            <p>
-              <i>RawJson(RawJsonMessage)</i> : This is the endpoint to get the raw json data.
-            </p>
-          </p>
-          <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>StartStream</b> (<a href="../CoreTweet.Streaming/StreamingParameters.html">StreamingParameters</a> parameters, <a href="../CoreTweet.Streaming/StreamingType.html">StreamingType</a> type, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, Action&lt;StreamingMessage&gt;&gt;&gt;</a>[] streamingActions)</div>
-          <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType,System.Linq.Expressions.Expression{System.Func{System.String,System.Action{CoreTweet.Streaming.StreamingMessage}}}[]):Parameters">
-            <dl>
-              <dt>
-                <i>parameters</i>
-              </dt>
-              <dd>
-            Parameters for Streaming API.
-            </dd>
-              <dt>
-                <i>type</i>
-              </dt>
-              <dd>
-            Type of Streaming API.
-            </dd>
-              <dt>
-                <i>streamingActions</i>
-              </dt>
-              <dd>
-            Actions for streaming API.
-            </dd>
-            </dl>
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType,System.Linq.Expressions.Expression{System.Func{System.String,System.Action{CoreTweet.Streaming.StreamingMessage}}}[]):Remarks">
-                
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType,System.Linq.Expressions.Expression{System.Func{System.String,System.Action{CoreTweet.Streaming.StreamingMessage}}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingApi.StartStream(CoreTweet.Streaming.StreamingType,CoreTweet.Streaming.StreamingParameters):Version Information">
+            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
           <hr size="1" />
         </blockquote>
       </div>

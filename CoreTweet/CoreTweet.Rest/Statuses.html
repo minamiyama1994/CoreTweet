@@ -68,7 +68,7 @@
         color: gray;
       }
 
-      span.NotEntered /* Documentation for this section has not yet been entered */ {
+      span.NotEntered /* */ {
         font-style: italic;
         color: red;	
       }
@@ -214,11 +214,11 @@
     <div class="Remarks" id="T:CoreTweet.Rest.Statuses:Docs">
       <h2 class="Section">Remarks</h2>
       <div class="SectionBox" id="T:CoreTweet.Rest.Statuses:Docs:Remarks">
-            
+        <span class="NotEntered"></span>
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.Rest.Statuses:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -239,7 +239,7 @@
                 <td>
                   <i>
                     <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>
-                  </i>.      (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
+                  </i>. <span class="NotEntered"></span> (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
               </tr>
             </table>
           </div>
@@ -281,16 +281,6 @@
                   <b>
                     <a href="#M:CoreTweet.Rest.Statuses.Destroy(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Destroy</a>
                   </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="../CoreTweet/Status.html">CoreTweet.Status</a></nobr><blockquote><p>Destroys the status specified by the required ID parameter. The authenticating user must be the author of the specified status. Returns the destroyed status if successful.</p><p>Avaliable parameters: </p><p><i>long id (required)</i> : The numerical ID of the desired status.</p><p><i>bool trim_user (optional)</i> : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></blockquote></td>
-              </tr>
-              <tr valign="top">
-                <td>
-                  <div>
-                  </div>
-                </td>
-                <td colspan="2">
-                  <b>
-                    <a href="#M:CoreTweet.Rest.Statuses.Firehose(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Firehose</a>
-                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.Status&gt;</a></nobr><blockquote><p>Returns all public statuses. Few applications require this level of access. Creative use of a combination of other resources and various access levels can satisfy nearly every application use case.</p><p>Avaliable parameters: </p><p><i>int count (optional)</i> : The number of messages to backfill. See the count parameter documentation for more information.</p><p><i>stringg delimited (optional)</i> : Specifies whether messages should be length-delimited. See the delimited parameter documentation for more information.</p><p><i>string stall_warnings (optional)</i> : Specifies whether stall warnings should be delivered. See the stall_warnings parameter documentation for more information.</p></blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -417,47 +407,11 @@
           <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Statuses.Destroy(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">The destroied status.</blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Destroy(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
-                
+            <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Destroy(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="M:CoreTweet.Rest.Statuses.Firehose(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Firehose Method</h3>
-        <blockquote id="M:CoreTweet.Rest.Statuses.Firehose(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
-          <p class="Summary">
-            <p>Returns all public statuses. Few applications require this level of access. Creative use of a combination of other resources and various access levels can satisfy nearly every application use case.</p>
-            <p>Avaliable parameters: </p>
-            <p>
-              <i>int count (optional)</i> : The number of messages to backfill. See the count parameter documentation for more information.</p>
-            <p>
-              <i>stringg delimited (optional)</i> : Specifies whether messages should be length-delimited. See the delimited parameter documentation for more information.</p>
-            <p>
-              <i>string stall_warnings (optional)</i> : Specifies whether stall warnings should be delivered. See the stall_warnings parameter documentation for more information.</p>
-          </p>
-          <h2>Syntax</h2>
-          <div class="Signature">[System.Obsolete("This endpoint requires special permission to access. (not be obsolete)")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.Status&gt;</a> <b>Firehose</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
-          <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Statuses.Firehose(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Parameters">
-            <dl>
-              <dt>
-                <i>parameters</i>
-              </dt>
-              <dd>
-            Parameters.
-            </dd>
-            </dl>
-          </blockquote>
-          <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Statuses.Firehose(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">Statuses.</blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Firehose(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
-                
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Firehose(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Statuses.HomeTimeline(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">HomeTimeline Method</h3>
@@ -495,11 +449,11 @@
           <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Statuses.HomeTimeline(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">The statuses.</blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.HomeTimeline(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
-                
+            <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.HomeTimeline(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Statuses.MentionsTimeline(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">MentionsTimeline Method</h3>
@@ -535,11 +489,11 @@
           <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Statuses.MentionsTimeline(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">The statuses.</blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.MentionsTimeline(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
-                
+            <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.MentionsTimeline(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Statuses.Oembed(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Oembed Method</h3>
@@ -582,11 +536,11 @@
           <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Statuses.Oembed(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">The HTML code and more.</blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Oembed(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
-                
+            <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Oembed(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Statuses.Retweet(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Retweet Method</h3>
@@ -616,11 +570,11 @@
           <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Statuses.Retweet(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">The retweeted status.</blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Retweet(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
-                
+            <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Retweet(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Statuses.Retweets(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Retweets Method</h3>
@@ -652,11 +606,11 @@
           <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Statuses.Retweets(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">Statuses.</blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Retweets(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
-                
+            <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Retweets(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Statuses.RetweetsOfMe(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">RetweetsOfMe Method</h3>
@@ -692,11 +646,11 @@
           <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Statuses.RetweetsOfMe(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">The statuses.</blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.RetweetsOfMe(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
-                
+            <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.RetweetsOfMe(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Statuses.Show(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Show Method</h3>
@@ -728,11 +682,11 @@
           <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Statuses.Show(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">The status.</blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Show(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
-                
+            <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Show(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Statuses.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Update Method</h3>
@@ -774,11 +728,11 @@
           <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Statuses.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">The updated status.</blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
-                
+            <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Statuses.UserTimeline(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">UserTimeline Method</h3>
@@ -820,11 +774,11 @@
           <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Statuses.UserTimeline(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">The statuses.</blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.UserTimeline(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
-                
+            <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Statuses.UserTimeline(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5105.41580</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.2037</div>
           <hr size="1" />
         </blockquote>
       </div>
