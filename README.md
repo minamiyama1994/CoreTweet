@@ -17,6 +17,8 @@ DynamicJson.cs  ... the Ms-PL License. (by [neuecc](http://dynamicjson.codeplex.
 
 The other codes ... the MIT License.
 
+The [Json.NET](http://james.newtonking.com/json) is licensed under the MIT License, too.
+
 ## Website
 
 To see the document of CoreTweet, visit [our website](http://lambdalice.github.io/CoreTweet/) now!
