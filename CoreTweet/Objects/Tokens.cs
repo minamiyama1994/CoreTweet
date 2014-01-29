@@ -26,6 +26,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Collections.Generic;
 using System.IO;
+using System.Net;
 using CoreTweet.Core;
 using CoreTweet.Rest;
 using CoreTweet.Streaming;
@@ -195,14 +196,35 @@ namespace CoreTweet
         /// </param>
         public Stream SendRequest(MethodType type, string url, IDictionary<string,object> parameters)
         {
-            var prms = Request.GenerateParameters(this.ConsumerKey, this.AccessToken);
-            foreach(var p in parameters)
-                prms.Add(p.Key, Request.UrlEncode(p.Value.ToString()));
-            var sgn = Request.GenerateSignature(this,
-                type == MethodType.Get ? "GET" : "POST", url, prms);
-            prms.Add("oauth_signature", Request.UrlEncode(sgn));
-            return type == MethodType.Get ? Request.HttpGet(url, prms) : 
-                type == MethodType.Post ? Request.HttpPost(url, prms, true) : Request.HttpPost(url, prms, false);
+            try
+            {
+                if(type != MethodType.Get && parameters.Values.Any(x => x is Stream || x is IEnumerable<byte> || x is FileInfo))
+                {
+                    var prms = Request.GenerateParameters(this.ConsumerKey, this.AccessToken);
+                    var sgn = Request.GenerateSignature(this, "POST", url, prms);
+                    prms.Add("oauth_signature", sgn);
+                    return Request.HttpPostWithMultipartFormData(url, parameters, prms, type == MethodType.Post);
+                }
+                else
+                {
+                    var prms = Request.GenerateParameters(this.ConsumerKey, this.AccessToken);
+                    foreach(var p in parameters)
+                        prms.Add(p.Key, Request.UrlEncode(p.Value.ToString()));
+                    var sgn = Request.GenerateSignature(this,
+                        type == MethodType.Get ? "GET" : "POST", url, prms);
+                    prms.Add("oauth_signature", Request.UrlEncode(sgn));
+                    return type == MethodType.Get ? Request.HttpGet(url, prms) :
+                        type == MethodType.Post ? Request.HttpPost(url, prms, true) : Request.HttpPost(url, prms, false);
+                }
+            }
+            catch(WebException ex)
+            {
+                var tex = TwitterException.Create(this, ex);
+                if(tex != null)
+                    throw tex;
+                else
+                    throw;
+            }
         }
         
         /// <summary>
